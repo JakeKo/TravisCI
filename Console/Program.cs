@@ -63,31 +63,20 @@ namespace TravisCILab
             return Console.ReadLine().Trim();
         }
 
-        public static double Add(string x, string y)
-        {
-            return double.Parse(x) + double.Parse(y);
-        }
+        public static double Add(string x, string y) =>
+            double.Parse(x) + double.Parse(y);
 
-        public static double Subtract(string x, string y)
-        {
-            return double.Parse(x) - double.Parse(y);
-        }
-        public static double Multiply(string x, string y)
-        {
-            return double.Parse(x) * double.Parse(y);
-        }
-        public static double Divide(string x, string y)
-        {
-            return double.Parse(x) / double.Parse(y);
-        }
+        public static double Subtract(string x, string y) =>
+            double.Parse(x) - double.Parse(y);
+
+        public static double Multiply(string x, string y) =>
+            double.Parse(x) * double.Parse(y);
+
+        public static double Divide(string x, string y) =>
+            double.Parse(x) / double.Parse(y);
 
         // Implement this method following a similar pattern as above
-        public static double Power(string x, string y)
-        {
-            throw new NotImplementedException();
-        }
+        public static double Power(string x, string y) =>
+            Math.Pow(double.Parse(x), double.Parse(y));
     }
-
-
-
 }
